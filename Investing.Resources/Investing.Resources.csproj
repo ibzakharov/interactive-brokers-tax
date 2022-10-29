@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <AssemblyName>Investing.Resources</AssemblyName>
+        <RootNamespace>Investing.Resources</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="InteractiveBrokers\Ivan\2019.csv" />
+      <EmbeddedResource Include="InteractiveBrokers\Test\2019.csv" />
+      <None Remove="InteractiveBrokers\Ivan\2020.csv" />
+      <EmbeddedResource Include="InteractiveBrokers\Test\2020.csv" />
+      <None Remove="InteractiveBrokers\Ivan\2021.csv" />
+      <EmbeddedResource Include="InteractiveBrokers\Test\2021.csv" />
+      <None Remove="InteractiveBrokers\Ruslan\2020.csv" />
+      <None Remove="InteractiveBrokers\Ruslan\2021.csv" />
+      <None Remove="InteractiveBrokers\Ivan\2022.csv" />
+      <EmbeddedResource Include="InteractiveBrokers\Test\2022.csv" />
+    </ItemGroup>
+
+</Project>

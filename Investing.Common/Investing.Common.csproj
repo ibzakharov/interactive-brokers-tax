@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <AssemblyName>Investing.Common</AssemblyName>
+        <RootNamespace>Investing.Common</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Aspose.Words" Version="21.4.0" />
+      <PackageReference Include="Autofac" Version="6.2.0" />
+      <PackageReference Include="EPPlus" Version="5.5.5" />
+      <PackageReference Include="System.Text.Encoding.CodePages" Version="5.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Templates\Nalog.xlsx">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Templates\Note.docx">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Investing.Data\Investing.Data.csproj" />
+      <ProjectReference Include="..\Investing.Resources\Investing.Resources.csproj" />
+    </ItemGroup>
+
+</Project>
